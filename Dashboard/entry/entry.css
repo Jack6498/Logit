@@ -1,0 +1,255 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Set a background color for the entire page */
+body {
+  background-color: #f0f0f0; /* Light gray */
+  font-family: Arial, sans-serif;
+}
+/* Style the header section */
+#header {
+  background-color: #666; /* Dark gray */
+  color: #fff; /* White text */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+#LessonTitle {
+  border: none;
+  background-color: #444; /* Dark gray */
+  color: #fff; /* White text */
+  padding: 5px;
+  border-radius: 5px;
+  Height: 80%;
+  margin: auto 0;
+  margin-left: 10px;
+}
+#LessonStartDate, #LessonEndDate {
+  border: none;
+  background-color: #444; /* Dark gray */
+  color: #fff; /* White text */
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  Height: 80%;
+  margin: auto 0;
+}
+/* Style the menuBar */
+#menuBar {
+  background-color: #ccc; /* Light silver */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+/* Style the Quill toolbar */
+#toolbar {
+  display: flex;
+  align-items: center;
+}
+/* Style the Submit button */
+#navButtons button {
+  background-color: #666; /* Dark gray */
+  color: #fff; /* White text */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 60px;
+  margin: auto 20px;
+  box-sizing: border-box;
+  width: 400px;
+  font-size: 1.8em;
+}
+#submitDiv button{
+	background-color: #666; /* Dark gray */
+  color: #fff; /* White text */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 60px;
+  margin: 0 20%;
+  box-sizing: border-box;
+  width: 60%;
+  font-size: 1.8em;
+}
+#submitDiv{
+	width:100vw;
+}
+#navButtons button:hover {
+  background-color: #444; /* Slightly darker gray on hover */
+}
+/* Style the container */
+#container {
+  background-color: #fff; /* White background for the editor */
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+/* Style the editor content */
+#editor {
+  color: #333; /* Dark text color */
+}
+/* Style the Quill toolbar dropdowns */
+.ql-align, .ql-size {
+  border: none;
+ background-color: #ccc;  
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0 50px 0 0;
+  height: 40px !important;
+	wdith: auto!;
+  text-align: center !important;
+}
+.ql-align svg {
+	margin-top:-6px !important;
+	height:40px !important;
+	width:auto;
+	  border-radius: 5px;
+  padding: 2px 3px;
+}
+.ql-align svg:hover {
+	background-color: #bbb;
+}
+.ql-picker-options svg{
+	height: 18px !important;
+	width: 18px !important;
+}
+.ql-picker-label{
+	text-align:center !important;
+	height: 40px !important;
+	border-radius: 5px;
+	padding: 5px 10px 5px 0px!important;
+	font-weight:bold;
+	font-size: 1.4em;
+}
+.ql-size svg{
+	display:none;
+	
+}
+.ql-picker-label:hover{
+	background-color: #bbb;
+	
+}
+/* Style Quill toolbar buttons */
+.ql-toolbar button {
+  background-color: #ccc; /* Light silver */
+  color: #333; /* Dark text color */
+  border: none;
+  padding: 5px 10px;
+  margin: 0 2px;
+  border-radius: 5px;
+  width: auto !important;
+  height: 40px !important;
+}
+/* Style Quill toolbar buttons on hover */
+.ql-toolbar button:hover {
+  background-color: #bbb; /* Slightly darker silver on hover */
+}
+#floating-window {
+  position: fixed;
+  display: block;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-height: 90%;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 999;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+/* Add your button styles here */
+.open-button {
+  /* Add any button styles you need */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: 31%;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+.checkbox {
+  flex: 0 0 auto;
+  margin-right: 5px;
+}
+.content {
+  flex: 1 1 auto;
+}
+.odd {
+  background: #f2f2f2;
+}
+.even {
+  background: #e0e0e0;
+}
+.content p {
+  margin: 0;
+}
+/* Add these styles to your existing CSS */
+.apply-button, .cancel-button {
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  background: #e0e0e0; /* Light gray background */
+  color: #333; /* Dark gray text color */
+}
+.apply-button:hover, .cancel-button:hover {
+  background: #ccc; /* Slightly darker gray on hover */
+}
+.apply-button {
+  background: #ccc; /* Lighter gray background */
+  color: #333; /* Dark gray text color */
+}
+.cancel-button {
+  background: #666; /* Darker gray background */
+  color: #fff; /* White text color for contrast */
+}
+.apply-button:hover {
+  background: #bbb; /* Slightly darker gray on hover */
+}
+.cancel-button:hover {
+  background: #333; /* Slightly lighter gray on hover */
+}
+#selected_standards{
+	height:60px;
+	display:flex;
+	justify-content: center;
+	padding: 10px 50px;
+	 margin-top: 20px;
+}
+#selected_standards div {
+	border: 2px solid black;
+	padding:10px;
+	border-radius:10px;
+	margin-left: 50px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}

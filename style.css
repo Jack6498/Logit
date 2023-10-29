@@ -1,0 +1,200 @@
+html {
+  height: 100%;
+  width: 100%;
+  /*background-image: url(images/tempbg.jpg); */
+  background-color: #237de4ab;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.main {
+  min-height: 500px;
+  max-height: 1500px;
+  background-color: white;
+  width: 85%;
+  /* height: 800px; */
+  height:80%;
+  margin: auto;
+  /* display: flex; */
+  box-sizing: border-box;
+  position: absolute;
+  /* Note: I put it back to my way so that it is always centered on the display */
+  /* top: 5%;
+  left: 5%;
+  right: 5%; */
+  top:50%;
+  left:50%;
+  -ms-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+.main h5{
+  font-size:.9em;
+
+  text-align: center;
+  margin: 20px 0px;
+  padding:0;
+  color: #3090ff;
+  font-weight:550;
+  /* text-decoration: underline; */
+  cursor:grab;
+
+}
+.left {
+  width: 50%;
+  color: whitesmoke;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.leftImage{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin:0px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.right {
+  width: 50%;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 0px 8px 8px 0px;
+  min-width: 650px;
+}
+
+.right_content {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2vw 6vw;
+}
+.right_content span{
+  color: #3090ff;
+  font-weight:520;
+  /* text-decoration: underline; */
+  cursor:grab;
+}
+.right_content ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.choices li {
+  background-color: white;
+  color: #002D62;
+  margin: 0;
+  padding-block: 0px;
+  padding-inline: 0px;
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  box-sizing:border-box;
+  border:none;
+
+}
+.choices{
+	margin-bottom: 20px;
+  border: 2px solid rgb(189, 189, 189);
+  border-radius:4px;
+	
+}
+#choices_header{
+  margin:10px 0px 0px 0;
+  font-weight: 520;
+
+}
+
+.choices li:hover {
+  background-color: #3090ff !important;
+  color: #FFF !important;
+}
+/* .selected is managed through js */
+.selected{
+  background-color: #3090ff !important;
+  color: #FFF !important;
+  
+}
+
+#parent {
+  border-radius: 3px 0px 0px 3px;
+}
+
+#admin {
+  border-radius: 0px 3px 3px 0px;
+}
+
+.Title {
+  margin-bottom: 5px;
+}
+
+.Subtitle {
+  margin-top: 5px;
+  font-weight: 500;
+  color: rgb(139, 139, 139);
+}
+
+input[type=text], input[type=email], input[type=password] {
+  padding: 8px 8px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(189, 189, 189);
+  border-radius: 1ch;
+  margin: 10px 10px 10px 0px;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+
+}
+
+.inputs {
+  width: 60%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+#rememberLogin {
+  margin: 10px;
+}
+
+.SubmitButton {
+  background-color: #3090ff;
+  border-radius: 1ch;
+  padding: 10px;
+  margin: 6px;
+  margin-top: 20px;
+  border-style: none;
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.SubmitButton:hover {
+  background-color: #002D62;
+	cursor:grab;
+}
+
+label {
+  font-weight: 500;
+  color: rgb(85, 85, 85);
+}

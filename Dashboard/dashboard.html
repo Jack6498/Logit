@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="dashboard.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="">
+
+  <div class="main" id="log_in">
+    <div class="left">
+      <img src="../images/signInBackground.png" alt="img" class="leftImage" />
+    </div>
+    <div class="right">
+      <div class="right_content">
+        <h1 class="Title">Welcome back</h1>
+        <h3>What would you like to do?</h2>
+          <div id="buttonContainer">
+            <button onclick="navtoentry()">Create a new Lesson Plan</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script>
+  if (sessionStorage.getItem("type") == 'admin') {
+    var reportButton = document.createElement('button');
+    reportButton.innerHTML = 'Generate Report';
+    // reportButton.addEventListener('click', generateReport());
+    document.getElementById("buttonContainer").appendChild(reportButton);
+    console.log(sessionStorage.getItem("type"));
+  }else{
+    console.log(sessionStorage.getItem("type"));
+  }
+  function navtoentry() {
+    window.location.href = "entry/entry.html";
+  }
+  function generateReport() {
+    console.log("report");
+    location.href = "teacherReport/report.html"
+  }
+</script>
+
+</html>
